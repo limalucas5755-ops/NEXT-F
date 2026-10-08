@@ -1,0 +1,1087 @@
+/* =========================================================
+   RESET / CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #111;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================================
+   HEADER / NAVEGAÇÃO
+   ========================================================= */
+
+.header {
+    min-height: 82px;
+    background: #050505;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    gap: 20px;
+}
+
+.brand img {
+    width: 115px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.header nav {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.header nav a {
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.header nav a:hover,
+.header nav a.active {
+    color: #e50914;
+}
+
+.theme-btn {
+    background: #e50914;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+.btn {
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+
+    padding: 13px 21px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: #b8060f;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.btn.outline:hover {
+    background: #fff;
+    color: #111;
+}
+
+.btn.white {
+    background: #fff;
+    color: #111;
+}
+
+.creative-btn {
+    border: 0;
+    background: #111;
+    color: #fff;
+
+    padding: 11px 15px;
+    border-radius: 4px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.creative-btn:hover {
+    background: #e50914;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 620px;
+
+    background: linear-gradient(
+        105deg,
+        #050505 0%,
+        #101010 58%,
+        #e50914 100%
+    );
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 8%;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: #e50914;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 0.98;
+    margin: 14px 0 24px;
+}
+
+.hero h1 span {
+    color: #e50914;
+}
+
+.hero-text > p:not(.eyebrow) {
+    color: #ddd;
+    max-width: 570px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-card {
+    width: 370px;
+    height: 370px;
+
+    background: #050505;
+    border: 2px solid #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(2deg);
+    box-shadow: 0 20px 50px #0008;
+}
+
+.hero-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   SEÇÕES
+   ========================================================= */
+
+.section {
+    padding: 75px 8%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2,
+.page-head h1 {
+    font-size: 40px;
+}
+
+
+/* =========================================================
+   CARDS / GRID
+   ========================================================= */
+
+.feature-grid,
+.martial-grid,
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.feature {
+    padding: 28px;
+    background: #f4f4f4;
+    border-top: 4px solid #e50914;
+    border-radius: 7px;
+}
+
+.feature span,
+.martial-card > span {
+    font-size: 42px;
+}
+
+.feature h3 {
+    margin: 10px 0;
+}
+
+
+/* =========================================================
+   BANNER VERMELHO
+   ========================================================= */
+
+.red-banner {
+    background: #e50914;
+    color: #fff;
+
+    padding: 55px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   CABEÇALHO DE PÁGINA
+   ========================================================= */
+
+.page-head {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.page-head h1 {
+    margin: 8px 0 10px;
+}
+
+.page-head p:last-child {
+    color: #ccc;
+}
+
+
+/* =========================================================
+   MODALIDADES / ARTES MARCIAIS
+   ========================================================= */
+
+.martial-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.martial-card {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 25px;
+
+    border-top: 4px solid #e50914;
+
+    transition: 0.2s;
+}
+
+.martial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #0001;
+}
+
+.martial-card h2 {
+    margin: 8px 0;
+}
+
+.martial-card p {
+    color: #555;
+    min-height: 70px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DOS TREINOS
+   ========================================================= */
+
+.training-info {
+    display: none;
+
+    margin-top: 15px;
+    padding: 13px;
+
+    background: #111;
+    color: #fff;
+
+    border-left: 4px solid #e50914;
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.training-info.show {
+    display: block;
+}
+
+.training-info strong {
+    color: #e50914;
+}
+
+
+/* =========================================================
+   PLANOS / PREÇOS
+   ========================================================= */
+
+.pricing-grid {
+    margin-bottom: 45px;
+}
+
+.price-card {
+    position: relative;
+
+    text-align: center;
+
+    padding: 35px;
+
+    background: #f4f4f4;
+    border-radius: 8px;
+    border-top: 4px solid #e50914;
+}
+
+.price-card h2 {
+    font-size: 27px;
+}
+
+.price-card strong {
+    display: block;
+
+    color: #e50914;
+    font-size: 32px;
+
+    margin: 20px 0;
+}
+
+.price-card .btn {
+    margin-top: 5px;
+}
+
+.price-card.featured {
+    border: 3px solid #e50914;
+}
+
+.tag {
+    display: inline-block;
+
+    background: #e50914;
+    color: #fff;
+
+    padding: 5px 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================================
+   CALCULADORA
+   ========================================================= */
+
+.calculator {
+    max-width: 650px;
+    margin: auto;
+
+    background: #111;
+    color: #fff;
+
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.calculator h2 {
+    margin-bottom: 18px;
+}
+
+.calculator select {
+    width: 100%;
+
+    padding: 13px;
+    margin: 10px 0 20px;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.total {
+    padding: 18px;
+
+    border-left: 5px solid #e50914;
+    background: #1d1d1d;
+}
+
+.total strong {
+    display: block;
+    color: #e50914;
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   TABELA DE HORÁRIOS
+   ========================================================= */
+
+.schedule {
+    overflow-x: auto;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.schedule th,
+.schedule td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule th {
+    background: #111;
+    color: #fff;
+}
+
+.schedule tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.note {
+    margin-top: 15px;
+    color: #666;
+}
+
+
+/* =========================================================
+   PÁGINA DE CONTATO
+   ========================================================= */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.contact-info,
+.contact-form {
+    background: #f4f4f4;
+    padding: 30px;
+
+    border-radius: 8px;
+    border-top: 4px solid #e50914;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin: 18px 0;
+}
+
+.contact-item span {
+    font-size: 25px;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+.contact-note {
+    font-size: 13px;
+    color: #777;
+    margin-top: 25px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 13px 0 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background: #fff;
+    color: #111;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+    background: #050505;
+    color: #fff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer img {
+    width: 130px;
+    height: 75px;
+    object-fit: contain;
+}
+
+footer p {
+    color: #ccc;
+}
+
+.small {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   PÁGINA DE CADASTRO
+   ========================================================= */
+
+.registration-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+
+    gap: 30px;
+    align-items: start;
+}
+
+.registration-form,
+.registration-side {
+    background: #f4f4f4;
+
+    padding: 30px;
+
+    border-radius: 8px;
+    border-top: 4px solid #e50914;
+}
+
+.registration-form h2,
+.registration-side h2 {
+    margin-bottom: 22px;
+}
+
+.registration-form label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background: #fff;
+    color: #111;
+}
+
+.registration-form textarea {
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.registration-form .btn {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions .btn {
+    flex: 1;
+}
+
+.registration-side {
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.registration-side img {
+    width: 210px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.registration-side p {
+    color: #ccc;
+}
+
+.registration-points {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.registration-points p {
+    color: #fff;
+    margin: 12px 0;
+}
+
+.registration-points p::first-letter {
+    color: #e50914;
+}
+
+
+
+
+/* =========================================================
+   TABELA DE CADASTROS
+   ========================================================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.registration-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+}
+
+.registration-table th,
+.registration-table td {
+    padding: 14px 12px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ddd;
+
+    vertical-align: middle;
+}
+
+.registration-table th {
+    background: #111;
+    color: #fff;
+
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.registration-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.registration-table td small {
+    display: block;
+
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   AÇÕES DA TABELA
+   ========================================================= */
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+.action-buttons button,
+.status-badge {
+    border: 0;
+    background: none;
+
+    color: #e50914;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    padding: 4px 6px;
+}
+
+.action-buttons button:hover {
+    text-decoration: underline;
+}
+
+.action-buttons .danger {
+    color: #777;
+}
+
+.status-badge {
+    border-radius: 20px;
+
+    background: #daf5df;
+    color: #16702b;
+
+    padding: 4px 10px;
+
+    font-size: 12px;
+}
+
+.status-badge.inativo {
+    background: #eee;
+    color: #666;
+}
+
+.empty-state {
+    text-align: center;
+    color: #777;
+    padding: 35px !important;
+}
+
+.management-note {
+    margin-top: 14px;
+
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LAYOUT PRINCIPAL DO CADASTRO
+   ========================================================= */
+
+.cadastro-grid {
+    width: 900px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.cadastro-grid input,
+.cadastro-grid select,
+.cadastro-grid textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cadastro-grid .management-section {
+    padding-top: 30px;
+}
+
+
+/* =========================================================
+   MODO ESCURO
+   ========================================================= */
+
+.dark {
+    background: #151515;
+    color: #fff;
+}
+
+.dark .feature,
+.dark .martial-card,
+.dark .price-card,
+.dark .contact-info,
+.dark .contact-form {
+    background: #222;
+    color: #fff;
+}
+
+.dark .martial-card p,
+.dark .feature p,
+.dark .contact-item p {
+    color: #ccc;
+}
+
+.dark .schedule td {
+    border-color: #444;
+}
+
+.dark .schedule tr:nth-child(even) {
+    background: #222;
+}
+
+.dark .contact-form input,
+.dark .contact-form select,
+.dark .contact-form textarea,
+.dark .calculator select {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark .registration-form {
+    background: #222;
+}
+
+.dark .registration-form input,
+.dark .registration-form select,
+.dark .registration-form textarea {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark .cadastro-grid .management-section {
+    background: #222;
+}
+
+.dark .management-card,
+.dark .registration-table tr:nth-child(even) {
+    background: #222;
+}
+
+.dark .management-toolbar input,
+.dark .management-toolbar select {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark .registration-table td {
+    border-color: #444;
+}
+
+.dark .registration-table td small {
+    color: #bbb;
+}
+
+.dark-outline {
+    border-color: #555 !important;
+    color: #fff !important;
+}
+
+
+/* =========================================================
+   CLASSES AUXILIARES
+   ========================================================= */
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: #e50914;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header nav {
+        order: 3;
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 800px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .feature-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .martial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cadastro-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - ATÉ 800PX
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .registration-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .management-heading {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .management-heading .btn {
+        width: 100%;
+    }
+
+    .management-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .management-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE - ATÉ 600PX
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-card {
+        width: 270px;
+        height: 270px;
+    }
+
+    .section {
+        padding: 55px 5%;
+    }
+
+    .martial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .red-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        padding: 8px 4%;
+    }
+
+    .header nav {
+        gap: 12px;
+    }
+
+    .header nav a {
+        font-size: 13px;
+    }
+
+    .page-head h1 {
+        font-size: 30px;
+    }
+
+    .cadastro-grid {
+        padding: 55px 5%;
+    }
+
+    .cadastro-grid .registration-form,
+    .cadastro-grid .management-section {
+        padding: 22px;
+    }
+}
